@@ -2,445 +2,1444 @@
 portfolio
 # 👋 Bonjour, moi c’est Joel
 
-### 🎓 Étudiant en Réseaux & Sécurité Informatique | 🛡️ Cybersécurité | 🌐 Réseaux | 💻 Infrastructure IT
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio de Joel Guei - Réseaux, Cybersécurité, IoT et SOC">
+
+    <title>Joel Guei | Réseaux & Cybersécurité</title>
+
+    <style>
+
+        /* =========================
+           VARIABLES
+        ========================== */
+
+        :root {
+            --bg: #f7f8fa;
+            --white: #ffffff;
+            --text: #111827;
+            --muted: #64748b;
+            --border: #e5e7eb;
+            --blue: #2563eb;
+            --dark: #0f172a;
+            --light-blue: #eff6ff;
+        }
+
+
+        /* =========================
+           RESET
+        ========================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
 
-> **Construire, sécuriser et superviser les infrastructures numériques de demain.**
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-Je suis étudiant en **Licence 3 Réseaux et Sécurité Informatique (RSI)**, avec un intérêt particulier pour la **cybersécurité, l’administration réseau, la sécurité des infrastructures, la supervision des systèmes et la détection des menaces**.
-
-Mon objectif est de développer progressivement un profil de **professionnel de la cybersécurité**, notamment dans le domaine de la **sécurité opérationnelle (SOC)**, tout en renforçant mes compétences pratiques à travers des projets techniques et des laboratoires.
-
-Je privilégie une approche très pratique : **comprendre → concevoir → configurer → tester → sécuriser → documenter.**
-
----
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
 
-## 🧑‍💻 À propos de moi
 
-* 🎓 **Licence 3 — Réseaux & Sécurité Informatique**
-* 🛡️ Orientation : **Cybersécurité**
-* 🎯 Objectif professionnel : **Analyste SOC / Administrateur Réseau & Sécurité**
-* 🌐 Domaine principal : **Réseaux & Infrastructures**
-* 🔐 Domaine d'intérêt : **Sécurité des systèmes et réseaux**
-* 🧪 Pratique : **Cisco Packet Tracer, GNS3, VMware**
-* 📚 En apprentissage continu : **CCNA, routage, switching, sécurité réseau, SOC**
-* 🚀 Objectif : transformer mes connaissances théoriques en **compétences techniques concrètes**
+        /* =========================
+           NAVBAR
+        ========================== */
 
----
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
 
-# 🛡️ Mes domaines de compétences
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
 
-### 🌐 Réseaux
+            border-bottom: 1px solid var(--border);
+        }
 
-* IPv4 / IPv6
-* Subnetting & VLSM
-* VLAN
-* Trunking
-* STP
-* EtherChannel
-* Routage statique
-* Routage statique flottant
-* Route par défaut
-* OSPF
-* EIGRP
-* BGP
-* HSRP / VRRP
-* DHCP
-* DNS
-* NAT / PAT
-* ACL
-* VPN
-* QoS
-* Architecture réseau
+        .nav-container {
+            height: 70px;
 
-### 🔐 Cybersécurité
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-* Sécurisation des équipements réseau
-* ACL et filtrage réseau
-* SSH / SSHv2
-* DHCP Snooping
-* Port Security
-* Segmentation réseau
-* VPN / IPsec
-* Sécurité Wi-Fi
-* Supervision réseau
-* Analyse du trafic
-* Détection des anomalies
-* Notions de réponse aux incidents
-* Sensibilisation au phishing et aux arnaques en ligne
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+        }
 
-### 🖥️ Infrastructure & outils
+        .logo span {
+            color: var(--blue);
+        }
 
-* Cisco Packet Tracer
-* GNS3
-* VMware Workstation
-* Wireshark
-* Cisco IOS
-* Linux
-* Git & GitHub
-* Microsoft Office
-* PowerPoint
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
 
----
+        .nav-links a {
+            font-size: 14px;
+            color: #475569;
+            transition: 0.3s;
+        }
 
-# 🚀 Projets
+        .nav-links a:hover {
+            color: var(--blue);
+        }
 
-Voici une sélection de mes projets et travaux pratiques.
 
----
+        /* =========================
+           HERO
+        ========================== */
 
-## 🔥 01 — Réseau d'entreprise sécurisé avec Cisco
+        .hero {
+            min-height: 90vh;
 
-### 🌐 Architecture réseau sécurisée
+            display: flex;
+            align-items: center;
 
-**Objectif :** concevoir et sécuriser une infrastructure réseau d'entreprise comprenant plusieurs segments, des équipements Cisco, du routage, des mécanismes de redondance et des dispositifs de sécurité.
+            background:
+                linear-gradient(
+                    180deg,
+                    #ffffff 0%,
+                    #f7f8fa 100%
+                );
+        }
 
-### 🧩 Technologies utilisées
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
 
-`Cisco IOS` `VLAN` `Trunk` `OSPF/EIGRP` `ACL` `NAT` `DHCP` `SSH` `DHCP Snooping` `VPN` `Wireshark`
+            gap: 60px;
 
-### 🔐 Sécurité mise en place
+            align-items: center;
+        }
 
-* Segmentation du réseau avec les VLAN
-* Sécurisation des ports
-* DHCP Snooping
-* Administration SSH
-* ACL
-* NAT
-* VPN
-* Journalisation / Syslog
-* Analyse du trafic avec Wireshark
-* Réduction de la surface d'attaque
+        .badge {
+            display: inline-block;
 
-### 📌 Ce que ce projet démontre
+            padding: 7px 14px;
 
-> Ma capacité à passer d'une architecture réseau théorique à une infrastructure **configurée, sécurisée et testée**.
+            background: var(--light-blue);
+            color: var(--blue);
 
-🔗 **Projet :** `https://github.com/TON-USERNAME/reseau-entreprise-securise`
+            border: 1px solid #bfdbfe;
 
----
+            border-radius: 50px;
 
-# 📹 02 — Système intelligent de surveillance et de sécurité basé sur les réseaux & l'IoT
+            font-size: 13px;
+            font-weight: bold;
 
-### 🏙️ Projet de sécurité urbaine — Abobo
+            margin-bottom: 25px;
+        }
 
-**Objectif :** concevoir une infrastructure intelligente permettant de surveiller et sécuriser une zone urbaine à l'aide de caméras IP, de réseaux informatiques et de technologies IoT.
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 75px);
 
-### 🏗️ Architecture
+            line-height: 1.05;
 
-Le système comprend notamment :
+            letter-spacing: -3px;
 
-* 📹 Caméras PTZ
-* 🚘 Caméras LPR
-* 📷 Caméras Bullet
-* 🔌 Switches PoE administrables
-* 🌐 Routeur Cisco
-* 🖥️ Serveur
-* 📼 NVR
-* 🔥 Firewall
-* 📡 Wi-Fi
-* 🔐 VPN
-* 📊 Système de supervision
+            margin-bottom: 25px;
+        }
 
-### 🔐 Sécurité
+        .hero h1 span {
+            color: var(--blue);
+        }
 
-L'infrastructure intègre plusieurs mécanismes :
+        .hero-description {
+            color: var(--muted);
 
-* VLAN et segmentation réseau
-* Routage inter-VLAN
-* ACL
-* DHCP Snooping
-* SSHv2
-* VPN IPsec
-* NAT
-* Filtrage réseau
-* Sécurisation Wi-Fi
-* Syslog
-* Analyse réseau avec Wireshark
+            font-size: 19px;
 
-### 📌 Résultat
+            max-width: 700px;
+        }
 
-Ce projet m'a permis de travailler sur une problématique combinant :
+        .buttons {
+            display: flex;
 
-**Réseaux + IoT + vidéosurveillance + cybersécurité + administration infrastructure.**
+            gap: 14px;
 
-🔗 **Projet :** `https://github.com/TON-USERNAME/surveillance-iot-reseau`
+            margin-top: 30px;
 
----
+            flex-wrap: wrap;
+        }
 
-# 🧠 03 — Solution intelligente de détection des arnaques en ligne
+        .btn {
+            display: inline-block;
 
-### 🛡️ Protection des utilisateurs à Abidjan
+            padding: 12px 20px;
 
-**Projet de recherche en cybersécurité**
+            border-radius: 12px;
 
-> **Conception d'une solution intelligente permettant de détecter les signes d'une arnaque en ligne afin de renforcer la protection des utilisateurs à Abidjan.**
+            font-weight: bold;
 
-### ⚠️ Problématique
+            border: 1px solid var(--border);
 
-Les utilisateurs sont exposés à différentes formes d'arnaques :
+            background: white;
 
-* 🎣 Phishing
-* 👤 Faux profils
-* 💰 Fausses offres
-* 🔗 Liens frauduleux
-* 🪪 Usurpation d'identité
-* 📱 Fraudes via les plateformes numériques
+            transition: 0.3s;
+        }
 
-Les techniques utilisées par les cybercriminels deviennent de plus en plus sophistiquées.
+        .btn:hover {
+            transform: translateY(-3px);
+        }
 
-### 💡 Idée du projet
+        .btn-primary {
+            background: var(--blue);
+            color: white;
 
-Développer une solution capable d'identifier certains **signaux caractéristiques d'une tentative d'arnaque** et d'aider l'utilisateur à prendre une décision avant d'interagir avec un contenu potentiellement dangereux.
+            border-color: var(--blue);
+        }
 
-### 🎯 Objectif
 
-> **Aider les utilisateurs à reconnaître rapidement les signes d'une tentative d'arnaque grâce à une solution adaptée au contexte local.**
+        /* =========================
+           PROFILE CARD
+        ========================== */
 
-### 🌍 Objectif de développement durable
+        .profile-card {
+            background: white;
 
-**ODD 16 — Paix, justice et institutions efficaces**
+            border: 1px solid var(--border);
 
-🔗 **Projet :** `https://github.com/TON-USERNAME/detection-arnaques-en-ligne`
+            border-radius: 24px;
 
----
+            padding: 30px;
 
-# 🔄 04 — Laboratoire de routage et haute disponibilité
+            box-shadow:
+                0 20px 50px rgba(15, 23, 42, 0.08);
+        }
 
-### 🌐 Routing & Gateway Redundancy Lab
+        .avatar {
+            width: 115px;
+            height: 115px;
 
-Laboratoire destiné à approfondir les mécanismes de routage et de redondance dans les infrastructures réseau.
+            display: grid;
+            place-items: center;
 
-### 🧪 Protocoles étudiés
+            background: var(--light-blue);
 
-* Static Routing
-* Floating Static Route
-* Default Route
-* OSPF
-* EIGRP
-* BGP
-* HSRP
-* VRRP
+            color: var(--blue);
 
-### 🎯 Objectif
+            border-radius: 50%;
 
-Comprendre comment assurer :
+            font-size: 40px;
 
-**Connectivité + disponibilité + redondance + continuité de service.**
+            font-weight: 900;
 
-### 🔧 Environnement
+            margin-bottom: 20px;
+        }
 
-`Cisco Packet Tracer` `GNS3` `Cisco IOS`
+        .profile-card h2 {
+            font-size: 25px;
+        }
 
-🔗 **Laboratoire :** `https://github.com/TON-USERNAME/cisco-routing-labs`
+        .profile-card p {
+            color: var(--muted);
+        }
 
----
+        .stats {
+            display: grid;
 
-# 🔬 05 — Cybersecurity Labs
+            grid-template-columns: repeat(3, 1fr);
 
-Une collection de laboratoires pratiques consacrés à l'apprentissage de la cybersécurité et de la sécurité réseau.
+            gap: 10px;
 
-### 🧪 Travaux pratiques
+            margin-top: 25px;
+        }
 
-* Analyse de trafic avec Wireshark
-* Configuration ACL
-* Sécurisation des switches
-* DHCP Snooping
-* Port Security
-* SSH
-* VPN
-* NAT
-* Segmentation réseau
-* Analyse de scénarios d'attaque
-* Identification de vulnérabilités
-* Mise en place de mécanismes de défense
+        .stat {
+            background: #f8fafc;
 
-🔗 **Voir les labs :** `https://github.com/TON-USERNAME/cybersecurity-labs`
+            padding: 15px;
 
----
+            border-radius: 14px;
 
-# 📚 Certifications & apprentissage
+            text-align: center;
+        }
 
-Je développe progressivement mes compétences autour des technologies et domaines suivants :
+        .stat strong {
+            display: block;
 
-### Cisco / Réseaux
+            font-size: 20px;
+        }
 
-* CCNA
-* Switching
-* Routing
-* Network Security
-* Cisco IOS
+        .stat span {
+            font-size: 12px;
 
-### Cybersécurité
+            color: var(--muted);
+        }
 
-* SOC
-* SIEM
-* Threat Detection
-* Incident Response
-* Network Security
-* Vulnerability Assessment
-* Ethical Hacking
 
-### Outils
+        /* =========================
+           SECTIONS
+        ========================== */
 
-* Wireshark
-* GNS3
-* Packet Tracer
-* VMware
-* Linux
-* Git / GitHub
+        section {
+            padding: 90px 0;
+        }
 
----
+        .section-header {
+            margin-bottom: 40px;
+        }
 
-# 🧭 Ma feuille de route
+        .section-label {
+            color: var(--blue);
 
-```text
-                    👨‍💻 MON PARCOURS
-                           │
-                           ▼
-              🎓 Réseaux & Sécurité
-                           │
-             ┌─────────────┴─────────────┐
-             ▼                           ▼
-       🌐 Réseaux                  🔐 Cybersécurité
-             │                           │
-      Routing / Switching          Security / SOC
-             │                           │
-             └─────────────┬─────────────┘
-                           ▼
-                 🛡️ Network Security
-                           │
-                           ▼
-                    🕵️ Analyste SOC
-                           │
-                           ▼
-              🚀 Expert Cybersécurité
-```
+            text-transform: uppercase;
 
----
+            letter-spacing: 2px;
 
-# 💼 Ce que je cherche à développer
+            font-size: 12px;
 
-Je souhaite continuer à développer mes compétences dans :
+            font-weight: bold;
+        }
 
-* 🛡️ Security Operations Center (SOC)
-* 🔎 Threat Detection
-* 📊 SIEM
-* 🌐 Network Security
-* 🚨 Incident Response
-* 🧪 Pentest / Ethical Hacking
-* ☁️ Cloud Security
-* 🔐 Infrastructure Security
-* 🤖 IA appliquée à la cybersécurité
+        .section-header h2 {
+            font-size: 40px;
 
----
+            letter-spacing: -1.5px;
 
-# 🧰 Technologies
+            margin-top: 8px;
+        }
 
-<p align="center">
+        .section-header p {
+            color: var(--muted);
 
-<img src="https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white" />
-<img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" />
-<img src="https://img.shields.io/badge/GNS3-4A90E2?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+            max-width: 700px;
 
-</p>
+            margin-top: 10px;
+        }
 
----
 
-# 📈 Ma philosophie
+        /* =========================
+           ABOUT
+        ========================== */
 
-> **La cybersécurité ne consiste pas seulement à savoir attaquer. Elle consiste surtout à comprendre comment protéger, détecter et réagir.**
+        .about-grid {
+            display: grid;
 
-Chaque projet que je réalise doit me permettre de répondre à quatre questions :
+            grid-template-columns: 1fr 1fr;
 
-```text
-1. Comment fonctionne le système ?
-            ↓
-2. Où se trouve le risque ?
-            ↓
-3. Comment peut-on le sécuriser ?
-            ↓
-4. Comment peut-on détecter une anomalie ?
-```
+            gap: 25px;
+        }
 
----
+        .card {
+            background: white;
 
-# 📂 Organisation de mon GitHub
+            border: 1px solid var(--border);
 
-```text
-📁 github-portfolio
-│
-├── 🌐 network-projects
-│   ├── reseau-entreprise-securise
-│   ├── routing-labs
-│   └── network-security
-│
-├── 🛡️ cybersecurity
-│   ├── cybersecurity-labs
-│   ├── wireshark
-│   ├── network-security
-│   └── soc-labs
-│
-├── 📡 iot
-│   └── surveillance-iot-reseau
-│
-├── 🧠 research
-│   └── detection-arnaques-en-ligne
-│
-└── 📚 documentation
-    └── notes-et-cours
-```
+            border-radius: 22px;
 
----
+            padding: 28px;
 
-# 📊 GitHub
+            box-shadow:
+                0 10px 30px rgba(15, 23, 42, 0.04);
+        }
 
-<p align="center">
+        .card h3 {
+            margin-bottom: 12px;
 
-<img src="https://github-readme-stats.vercel.app/api?username=TON-USERNAME&show_icons=true&theme=transparent&hide_border=true" />
+            font-size: 22px;
+        }
 
-</p>
+        .card p {
+            color: var(--muted);
+        }
 
-<p align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=TON-USERNAME&theme=transparent&hide_border=true" />
+        /* =========================
+           SKILLS
+        ========================== */
 
-</p>
+        .skills-grid {
+            display: grid;
 
----
+            grid-template-columns: repeat(3, 1fr);
 
-# 🤝 Collaborons
+            gap: 18px;
+        }
 
-Je suis ouvert à :
+        .tags {
+            display: flex;
 
-* 💻 Projets réseaux
-* 🛡️ Projets cybersécurité
-* 📡 Projets IoT
-* 🔬 Projets de recherche
-* 🧪 Labs techniques
-* 🤝 Collaborations étudiantes
-* 🚀 Projets innovants
+            flex-wrap: wrap;
 
----
+            gap: 8px;
+        }
 
-# 📫 Contact
+        .tag {
+            background: #f1f5f9;
 
-📍 **Côte d'Ivoire — Abidjan**
+            color: #334155;
 
-💼 **GitHub :** `https://github.com/TON-USERNAME`
+            padding: 6px 10px;
 
-📧 **Email professionnel :** `TON-EMAIL`
+            border-radius: 8px;
 
-🔗 **LinkedIn :** `TON-LINKEDIN`
+            font-size: 13px;
+        }
 
----
 
-<p align="center">
+        /* =========================
+           PROJECTS
+        ========================== */
 
-### 🛡️ Réseaux • Cybersécurité • IoT • Innovation
+        .projects-grid {
+            display: grid;
 
-**"Learn. Build. Secure. Repeat."**
+            grid-template-columns: repeat(2, 1fr);
 
-</p>
+            gap: 20px;
+        }
+
+        .project {
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .project-number {
+            color: var(--blue);
+
+            font-size: 13px;
+
+            font-weight: 800;
+        }
+
+        .project h3 {
+            font-size: 23px;
+
+            margin: 8px 0;
+        }
+
+        .project p {
+            color: var(--muted);
+        }
+
+        .project .tags {
+            margin: 18px 0;
+        }
+
+        .project-link {
+            color: var(--blue);
+
+            font-weight: bold;
+
+            margin-top: auto;
+        }
+
+
+        /* =========================
+           ROADMAP
+        ========================== */
+
+        .roadmap {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 15px;
+        }
+
+        .roadmap-item {
+            background: white;
+
+            border: 1px solid var(--border);
+
+            padding: 22px;
+
+            border-radius: 18px;
+        }
+
+        .roadmap-number {
+            color: var(--blue);
+
+            font-weight: bold;
+        }
+
+        .roadmap-item h3 {
+            margin: 7px 0;
+        }
+
+        .roadmap-item p {
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================== */
+
+        .contact-box {
+            background: var(--dark);
+
+            color: white;
+
+            border-radius: 30px;
+
+            padding: 55px;
+        }
+
+        .contact-box h2 {
+            font-size: 40px;
+        }
+
+        .contact-box p {
+            color: #cbd5e1;
+
+            max-width: 650px;
+
+            margin: 12px 0 25px;
+        }
+
+        .contact-box .btn {
+            background: white;
+
+            color: var(--dark);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            text-align: center;
+
+            padding: 35px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 850px) {
+
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .roadmap {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+        }
+
+
+        @media (max-width: 550px) {
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .roadmap {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .contact-box {
+                padding: 30px 22px;
+            }
+
+            .contact-box h2 {
+                font-size: 30px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================== -->
+
+<nav>
+
+    <div class="container nav-container">
+
+        <a href="#accueil" class="logo">
+            Joel<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="#apropos">À propos</a>
+            </li>
+
+            <li>
+                <a href="#competences">Compétences</a>
+            </li>
+
+            <li>
+                <a href="#projets">Projets</a>
+            </li>
+
+            <li>
+                <a href="#parcours">Parcours</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<header class="hero" id="accueil">
+
+    <div class="container hero-grid">
+
+
+        <div>
+
+            <div class="badge">
+                Disponible pour projets & collaborations
+            </div>
+
+
+            <h1>
+                Je sécurise les
+                <span>réseaux</span>
+                et les infrastructures numériques.
+            </h1>
+
+
+            <p class="hero-description">
+
+                Je suis <strong>Joel Guei</strong>,
+                étudiant en Licence 3 Réseaux & Sécurité Informatique,
+                passionné par la cybersécurité, l'administration réseau,
+                l'IoT et la détection des menaces.
+
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="#projets"
+                    class="btn btn-primary">
+                    Voir mes projets
+                </a>
+
+                <a
+                    href="#contact"
+                    class="btn">
+                    Me contacter
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARTE PROFIL -->
+
+        <div class="profile-card">
+
+            <div class="avatar">
+                JG
+            </div>
+
+            <h2>
+                Joel Guei
+            </h2>
+
+            <p>
+                Réseaux & Sécurité Informatique
+            </p>
+
+
+            <div class="stats">
+
+                <div class="stat">
+                    <strong>L3</strong>
+                    <span>Formation</span>
+                </div>
+
+                <div class="stat">
+                    <strong>4+</strong>
+                    <span>Projets</span>
+                </div>
+
+                <div class="stat">
+                    <strong>SOC</strong>
+                    <span>Objectif</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     A PROPOS
+========================== -->
+
+<section id="apropos">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Profil
+            </div>
+
+            <h2>
+                À propos de moi
+            </h2>
+
+            <p>
+                Comprendre, construire, sécuriser,
+                tester et améliorer.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="card">
+
+                <h3>
+                    🎓 Mon parcours
+                </h3>
+
+                <p>
+
+                    Je suis étudiant en
+                    <strong>
+                        Licence 3 Réseaux et Sécurité Informatique
+                    </strong>.
+
+                    Je développe mes compétences grâce
+                    à des laboratoires Cisco, des architectures
+                    réseau, des projets IoT et des travaux pratiques
+                    en cybersécurité.
+
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    🎯 Mon objectif
+                </h3>
+
+                <p>
+
+                    Construire un profil professionnel orienté
+                    <strong>Analyste SOC</strong> et
+                    <strong>Administrateur Réseau & Sécurité</strong>,
+                    puis évoluer progressivement vers
+                    l'expertise en cybersécurité.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     COMPETENCES
+========================== -->
+
+<section id="competences">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Expertise
+            </div>
+
+            <h2>
+                Compétences techniques
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+            <!-- RESEAUX -->
+
+            <div class="card">
+
+                <h3>
+                    🌐 Réseaux
+                </h3>
+
+                <div class="tags">
+
+                    <span class="tag">IPv4 / IPv6</span>
+
+                    <span class="tag">VLAN</span>
+
+                    <span class="tag">Trunk</span>
+
+                    <span class="tag">STP</span>
+
+                    <span class="tag">EtherChannel</span>
+
+                    <span class="tag">OSPF</span>
+
+                    <span class="tag">EIGRP</span>
+
+                    <span class="tag">BGP</span>
+
+                    <span class="tag">HSRP / VRRP</span>
+
+                    <span class="tag">NAT</span>
+
+                    <span class="tag">DHCP</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CYBERSECURITE -->
+
+            <div class="card">
+
+                <h3>
+                    🛡️ Cybersécurité
+                </h3>
+
+                <div class="tags">
+
+                    <span class="tag">
+                        ACL
+                    </span>
+
+                    <span class="tag">
+                        SSH
+                    </span>
+
+                    <span class="tag">
+                        DHCP Snooping
+                    </span>
+
+                    <span class="tag">
+                        Port Security
+                    </span>
+
+                    <span class="tag">
+                        VPN / IPsec
+                    </span>
+
+                    <span class="tag">
+                        Wi-Fi Security
+                    </span>
+
+                    <span class="tag">
+                        Threat Detection
+                    </span>
+
+                    <span class="tag">
+                        Incident Response
+                    </span>
+
+                    <span class="tag">
+                        Phishing
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- OUTILS -->
+
+            <div class="card">
+
+                <h3>
+                    🧰 Outils
+                </h3>
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Cisco IOS
+                    </span>
+
+                    <span class="tag">
+                        Packet Tracer
+                    </span>
+
+                    <span class="tag">
+                        GNS3
+                    </span>
+
+                    <span class="tag">
+                        VMware
+                    </span>
+
+                    <span class="tag">
+                        Wireshark
+                    </span>
+
+                    <span class="tag">
+                        Linux
+                    </span>
+
+                    <span class="tag">
+                        Git
+                    </span>
+
+                    <span class="tag">
+                        GitHub
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJETS
+========================== -->
+
+<section id="projets">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Portfolio
+            </div>
+
+            <h2>
+                Mes projets
+            </h2>
+
+            <p>
+                Des projets conçus pour transformer
+                la théorie en compétences pratiques.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJET 1 -->
+
+            <article class="card project">
+
+                <div class="project-number">
+                    01 — RÉSEAUX & SÉCURITÉ
+                </div>
+
+                <h3>
+                    Réseau d'entreprise sécurisé
+                </h3>
+
+                <p>
+
+                    Conception d'une infrastructure Cisco
+                    avec segmentation réseau, routage,
+                    ACL, NAT, SSH, DHCP Snooping,
+                    VPN et supervision.
+
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Cisco
+                    </span>
+
+                    <span class="tag">
+                        VLAN
+                    </span>
+
+                    <span class="tag">
+                        ACL
+                    </span>
+
+                    <span class="tag">
+                        VPN
+                    </span>
+
+                </div>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/TON-USERNAME/reseau-entreprise-securise"
+                    target="_blank">
+
+                    Voir sur GitHub →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- PROJET 2 -->
+
+            <article class="card project">
+
+                <div class="project-number">
+                    02 — IoT & SÉCURITÉ URBAINE
+                </div>
+
+                <h3>
+                    Surveillance intelligente & IoT
+                </h3>
+
+                <p>
+
+                    Architecture de surveillance combinant
+                    caméras IP, PoE, NVR, routeurs,
+                    firewall, VPN et segmentation réseau.
+
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">
+                        IoT
+                    </span>
+
+                    <span class="tag">
+                        Cisco
+                    </span>
+
+                    <span class="tag">
+                        VPN
+                    </span>
+
+                    <span class="tag">
+                        Wireshark
+                    </span>
+
+                </div>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/TON-USERNAME/surveillance-iot-reseau"
+                    target="_blank">
+
+                    Voir sur GitHub →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- PROJET 3 -->
+
+            <article class="card project">
+
+                <div class="project-number">
+                    03 — RECHERCHE CYBERSÉCURITÉ
+                </div>
+
+                <h3>
+                    Détection des arnaques en ligne
+                </h3>
+
+                <p>
+
+                    Conception d'une solution intelligente
+                    visant à aider les utilisateurs à identifier
+                    rapidement les signes d'une tentative
+                    d'arnaque en ligne.
+
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Cybersécurité
+                    </span>
+
+                    <span class="tag">
+                        IA
+                    </span>
+
+                    <span class="tag">
+                        Détection
+                    </span>
+
+                    <span class="tag">
+                        Recherche
+                    </span>
+
+                </div>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/TON-USERNAME/detection-arnaques-en-ligne"
+                    target="_blank">
+
+                    Voir sur GitHub →
+
+                </a>
+
+            </article>
+
+
+
+            <!-- PROJET 4 -->
+
+            <article class="card project">
+
+                <div class="project-number">
+                    04 — CISCO LABS
+                </div>
+
+                <h3>
+                    Routing & Haute disponibilité
+                </h3>
+
+                <p>
+
+                    Laboratoires pratiques autour du routage
+                    statique, des routes flottantes,
+                    OSPF, EIGRP, BGP, HSRP et VRRP.
+
+                </p>
+
+                <div class="tags">
+
+                    <span class="tag">
+                        Routing
+                    </span>
+
+                    <span class="tag">
+                        OSPF
+                    </span>
+
+                    <span class="tag">
+                        EIGRP
+                    </span>
+
+                    <span class="tag">
+                        BGP
+                    </span>
+
+                </div>
+
+                <a
+                    class="project-link"
+                    href="https://github.com/TON-USERNAME/cisco-routing-labs"
+                    target="_blank">
+
+                    Voir sur GitHub →
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PARCOURS
+========================== -->
+
+<section id="parcours">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <div class="section-label">
+                Roadmap
+            </div>
+
+            <h2>
+                Ma feuille de route
+            </h2>
+
+            <p>
+                Une progression centrée sur la maîtrise
+                des infrastructures et la sécurité opérationnelle.
+            </p>
+
+        </div>
+
+
+        <div class="roadmap">
+
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-number">
+                    01
+                </div>
+
+                <h3>
+                    Réseaux
+                </h3>
+
+                <p>
+                    Routing, switching
+                    et architecture réseau.
+                </p>
+
+            </div>
+
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-number">
+                    02
+                </div>
+
+                <h3>
+                    Sécurité réseau
+                </h3>
+
+                <p>
+                    Segmentation, filtrage,
+                    VPN et durcissement.
+                </p>
+
+            </div>
+
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-number">
+                    03
+                </div>
+
+                <h3>
+                    Détection
+                </h3>
+
+                <p>
+                    Wireshark, logs,
+                    SIEM et analyse des menaces.
+                </p>
+
+            </div>
+
+
+            <div class="roadmap-item">
+
+                <div class="roadmap-number">
+                    04
+                </div>
+
+                <h3>
+                    SOC
+                </h3>
+
+                <p>
+                    Supervision, investigation
+                    et réponse aux incidents.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================== -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2>
+                Construisons quelque chose de sécurisé.
+            </h2>
+
+            <p>
+
+                Je suis ouvert aux projets réseaux,
+                cybersécurité, IoT, laboratoires techniques
+                et collaborations.
+
+            </p>
+
+
+            <div class="buttons">
+
+
+                <!-- GITHUB -->
+
+                <a
+                    class="btn"
+                    href="https://github.com/TON-USERNAME"
+                    target="_blank">
+
+                    GitHub
+
+                </a>
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="btn"
+                    href="mailto:TON-EMAIL">
+
+                    Email
+
+                </a>
+
+
+                <!-- LINKEDIN -->
+
+                <a
+                    class="btn"
+                    href="https://www.linkedin.com/in/TON-LINKEDIN"
+                    target="_blank">
+
+                    LinkedIn
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    © 2026 Joel Guei
+
+    <br>
+
+    Réseaux • Cybersécurité • IoT • Innovation
+
+</footer>
+
+
+</body>
+</html>
